@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.1.12",
   "scripts": {
-    "build": "rm -fr dist .cache && parcel build index.pug --public-url /textcomplete",
-    "format:eslint": "eslint --fix '**/*.ts' '**/*.tsx'",
-    "format:prettier": "prettier --write '**/*.ts' '**/*.tsx'",
+    "build": "rimraf dist .cache && parcel build index.pug --public-url /textcomplete",
+    "format:eslint": "eslint --fix **/*.ts **/*.tsx",
+    "format:prettier": "prettier --write **/*.ts **/*.tsx",
     "format": "run-s format:eslint format:prettier",
-    "lint": "eslint '**/*.ts' '**/*.tsx'",
+    "lint": "eslint **/*.ts **/*.tsx",
     "start": "parcel index.pug"
   },
   "dependencies": {
